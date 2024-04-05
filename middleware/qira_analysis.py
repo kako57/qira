@@ -344,7 +344,7 @@ def analyse_calls(trace):
       continue
 
     endclnum = get_last_instr(trace.dmap,clnum)
-    if endclnum is None:
+    if endclnum == None:
       continue
 
     #the function ran from start to ret... analyze what happened in there
